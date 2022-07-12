@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="401dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sign_button" />
+
+        <!--app:srcCompat="@drawable/sign_button" />-->
+
+        <TextView
+            android:id="@+id/IATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="your first name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/IATA"
+            app:layout_constraintTop_toBottomOf="@+id/IATA"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- android:layout_marginEnd="8dp"-->
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="your last name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Last Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/editTextLastName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="8 chars minimum"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+
+
+            android:text="Save"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <!--android:backgroundTint="@color/b"-->
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="Return to main menu"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnSave"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="your e-mail"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
